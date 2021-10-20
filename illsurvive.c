@@ -6,7 +6,6 @@
 // ps aux | grep illsurvive | grep -v grep -> to get current PID 
 // SIGKILL and SIGSTOP cannot be changed
 
-
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,6 +21,7 @@ int main(int argc, char *argv[])
 {
     printf("PID = %d\n", getpid());
     int a = 0;
+  
     //set handlers
     if ((signal(SIGINT, end_handler) == SIG_ERR) || (signal(SIGHUP, end_handler) == SIG_ERR)
         || (signal(SIGTERM, end_handler) == SIG_ERR))
