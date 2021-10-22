@@ -4,6 +4,9 @@
 #include <signal.h>
 #include <unistd.h>
 
+#define _GNU_SOURCE
+#define _XOPEN_SOURCE
+
 int a = 0;
 
 void    handle_signal(int signal)
@@ -20,10 +23,19 @@ void    reinit_a(int signal)
     a = 0;
 }
 
-int main(void)
+int main(int argc, char *argv[])
 {
-    signal(15, handle_signal);
-    signal(2, reinit_a);
+    struct sigaction sinal;
+    struct sigaction sinal1;
+    
+    sinal.sa_handler = handle_signal;
+    sinal.sa_flags = 0;
+
+    sinal1.sa_handler = reinit_a;
+    sinal1.sa_flags = 0;
+    
+    sigaction(15, &sinal, NULL);
+    sigaction(2, &sinal1, NULL);
     printf("PID = %d\n", getpid());
     while (1)
     {

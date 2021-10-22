@@ -25,15 +25,15 @@ void    send_string(int signal)
 
 int main(int argc, char *argv[])
 {
-    if (argc == 2)
+    if (argc == 3)
     {
 
         //recebe o pid + string
         int pid;
         char *string;
 
-        pid = (int)argv[0];
-        string = argv[1];
+        pid = (int)argv[1];
+        string = argv[2];
 
         signal(10, send_string);      
         // envia a string para o server
