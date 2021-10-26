@@ -9,7 +9,8 @@
 # define SIGUSR1 10
 # define SIGUSR2 12
 
-void    send_string(int signal);
+#define _POSIX_SOURCE
 
+void    send_string(int signal);
 
 # endif
