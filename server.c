@@ -18,12 +18,14 @@ char *print_string(char *str)
 void	*put_first_char(char c)
 {
 	char *string;
+	int	index;
 
+	index = 0;
 	string = (char *)malloc(sizeof(char) + 1);
 	if (!string)
 		return (NULL);
-	string[0] = c;
-	string[1] = '\0';
+	string[index++] = c;
+	string[index] = '\0';
 	return (string);
 }
 
@@ -32,6 +34,7 @@ void	*handle_string(char *str, char c)
 	char	*string;
 	int		index;
 
+	index = 0;
 	if(!c)
 		return (NULL);
 	if (!str)
@@ -39,7 +42,6 @@ void	*handle_string(char *str, char c)
 	string = (char *)(malloc(sizeof(char) * strlen(str) + 2));
 	if (!string)
 		return (NULL);
-	index = -1;
 	while (str[index])
 	{
 		string[index] = str[index];
