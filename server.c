@@ -6,64 +6,75 @@
 #include<signal.h>
 #include<stdio.h>
 #include<stdlib.h>
-#include<strings.h>
+#include<string.h>
 #include<unistd.h>
+
+char *print_string(char *str)
+{
+    printf("\n%s\n", str);
+    return (NULL);
+}
 
 void	*put_first_char(char c)
 {
 	char *string;
 
-	string = (char *)malloc(sizeof(char) * 2);
-	if (!string);
+	string = (char *)malloc(sizeof(char) + 2);
+	if (!string)
 		return (NULL);
 	string[0] = c;
 	string[1] = '\0';
 	return (string);
 }
 
-void	*create_string(char *string, char c)
+void	*handle_string(char *str, char c)
 {
 	char	*string;
-	int		i;
+	int		index;
 
 	if(!c)
 		return (NULL);
-	if (!string)
+	if (!str)
 		return (put_first_char(c));
 	string = (char *)(malloc(sizeof(char) * strlen(str) + 2));
 	if (!string)
-	{
-		free(str);
 		return (NULL);
+	index = -1;
+	while (str[index])
+	{
+		string[index] = str[index];
+		index++;
 	}
-	i = -1;
-	while (str[++i])
-		string[i] = str[i];
-	free(str);
-	string[i++] = c;
-	string[i] = '\0';
+	string[index++] = c;
+	string[index] = '\0';
 	return(string);
 }
 
 void sig_handler(int signal, siginfo_t *siginfo, void *context)
 {
-	static char	c = 0xFF;
+	static char	current = 0xFF;
 	static int bits = 0;
 	static char	*message;
 
-	if (signal == SIGUSR1)
-		c |= 0x80 >> bits;
-	else if (signal == SIGUSR2)
-		c ˆ= 0x80 >> bits;
+  	if (signal == SIGUSR1) // 1
+    	current |= 0x80 >> bits;
+  	else if (signal == SIGUSR2) // 0
+    	current ^= 0x80 >> bits;
 	if (++bits == 8)
 	{
-		if (c)
-			message = create_string(message, c);
+		if (current)
+			message = handle_string(message, current);
 		else
-			print_string(message);
+		{
+			message = print_string(message);
+			free(message);
+			message = NULL;
+		}
+		current = 0xFF;
 		bits = 0;
-		c = 0xFF;
 	}
+	kill(siginfo->si_pid, SIGUSR1);
+	(void)context;
 }
 
 int save_actions(void){
