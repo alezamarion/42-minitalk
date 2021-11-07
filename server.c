@@ -19,7 +19,7 @@ void	*put_first_char(char c)
 {
 	char *string;
 
-	string = (char *)malloc(sizeof(char) + 2);
+	string = (char *)malloc(sizeof(char) + 1);
 	if (!string)
 		return (NULL);
 	string[0] = c;

@@ -32,7 +32,7 @@ void	wait_server_response(void)
 void	send_signal(int pid, const char *str)
 {
 	int	count;
-	int	bit;
+	int bit;
 
 	count = 1 << 7;
 	while (count)
