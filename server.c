@@ -54,10 +54,12 @@ void	*handle_string(char *str, char c)
 
 void sig_handler(int signal, siginfo_t *siginfo, void *context)
 {
-	static char	current = 0xFF;
+	static char	current;
 	static int bits = 0;
 	static char	*message;
 
+	if (current == 0)
+		current = 0xFF;
   	if (signal == SIGUSR1) // 1
     	current |= 0x80 >> bits;
   	else if (signal == SIGUSR2) // 0
