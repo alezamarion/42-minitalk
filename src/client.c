@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/09 22:55:23 by azamario          #+#    #+#             */
+/*   Updated: 2021/11/10 00:33:01 by azamario         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 /* 
 1 - o cliente recebe dois parametros:
@@ -16,9 +26,7 @@ cliente manda para o server
 */
 
 #include<signal.h>
-#include<stdlib.h>
-#include<strings.h>
-#include<stdio.h>
+#include "libft.h"
 
 static int	g_done;
 
@@ -84,7 +92,7 @@ int	main(int argc, char const *argv[])
 
 	if (argc != 3)
 		exit(EXIT_FAILURE);
-	bzero(&action, sizeof(struct sigaction));
+	ft_bzero(&action, sizeof(struct sigaction));
 	action.sa_handler = sig_handler;
 	if (sigaction(SIGUSR1, &action, NULL))
 		exit(EXIT_FAILURE);
