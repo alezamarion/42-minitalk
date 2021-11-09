@@ -6,7 +6,7 @@
 /*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 22:54:56 by azamario          #+#    #+#             */
-/*   Updated: 2021/11/10 00:33:48 by azamario         ###   ########.fr       */
+/*   Updated: 2021/11/10 00:37:49 by azamario         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 #include "libft.h"
 
 
-char	*print_str(char *str)
+char	*print_string(char *str)
 {
 	ft_putstr_fd(str, 1);
 	return (NULL);
