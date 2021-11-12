@@ -6,19 +6,9 @@
 /*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 22:27:00 by azamario          #+#    #+#             */
-/*   Updated: 2021/06/29 15:58:17 by azamario         ###   ########.fr       */
+/*   Updated: 2021/11/10 01:05:46 by azamario         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-The ft_lstclear() function deletes and frees the given element and every
-successor of that element, using the function ’del’ and free(3). Finally, the
-pointer to the list must be set to null.
-
-t_list	**lst		- address of a pointer to an element.
-void (*del)(void*)	- address of the function used to delete the content of the content.
-*/
-
 
 #include "libft.h"
 

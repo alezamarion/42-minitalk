@@ -6,26 +6,9 @@
 /*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 16:18:10 by azamario          #+#    #+#             */
-/*   Updated: 2021/06/29 16:17:57 by azamario         ###   ########.fr       */
+/*   Updated: 2021/11/10 01:08:05 by azamario         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-Parameters 
-#1. The string to output.
-#2. The file descriptor on which to write.
-
-External functs
-write
-
-Description 
-Outputs the string ’s’ to the given file descriptor, followed by a newline.
-
-This function writes the string s to the file descriptor fd followed by a
-'\n' to make a new line. Using our ft_putstr_fd and ft_putchar_fd functions to 
-make this function work.
-*/
-
 
 #include "libft.h"
 

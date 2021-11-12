@@ -6,29 +6,9 @@
 /*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/01 21:24:05 by azamario          #+#    #+#             */
-/*   Updated: 2021/06/29 16:01:48 by azamario         ###   ########.fr       */
+/*   Updated: 2021/11/10 01:05:24 by azamario         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-Parameters 
-#1. the integer to convert.
-
-Return value 
-The string representing the integer. NULL if the allocation fails.
-
-External functs. 
-malloc
-
-Description 
-Allocates (with malloc(3)) and returns a string representing the integer received as an argument.
-Negative numbers must be handled.
-
-This function allocates memory and returns a 'fresh' string of characters
-terminated with a '\0' that is the char equivalent of the int passed in
-the parameter. Negative numbers should be managed as well. If the allocation
-fails the function will return NULL. */
-
 
 #include "libft.h"
 

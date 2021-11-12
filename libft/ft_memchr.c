@@ -6,22 +6,9 @@
 /*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 15:46:57 by azamario          #+#    #+#             */
-/*   Updated: 2021/06/29 16:05:35 by azamario         ###   ########.fr       */
+/*   Updated: 2021/11/10 01:07:03 by azamario         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/* 
-This function locates a byte in a byte string.
-The ft_memchr() function locates the first occurrence of c (converted to an unsigned char) in string s.
-
-const void	*s	- string where character is searched.
-int		c		- character that is to be searched.
-size_t	n		- number of bytes to check in the string.
-
-return 			- The ft_memchr() function returns a pointer to the byte located, or NULL
-				if no such byte exists within n bytes.
-*/
-
 
 #include "libft.h"
 

@@ -6,26 +6,9 @@
 /*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 20:37:15 by azamario          #+#    #+#             */
-/*   Updated: 2021/06/29 16:29:25 by azamario         ###   ########.fr       */
+/*   Updated: 2021/11/10 01:10:24 by azamario         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-Parameters 
-#1. The string to be trimmed.
-#2. The reference set of characters to trim.
-
-Return value
-The trimmed string. NULL if the allocation fails.
-
-External functs
-malloc
-
-Description
-Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed
-from the beginning and the end of the string.
-*/
-
 
 #include "libft.h"
 

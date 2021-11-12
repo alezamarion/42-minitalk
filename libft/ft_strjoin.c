@@ -6,21 +6,9 @@
 /*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 20:41:00 by azamario          #+#    #+#             */
-/*   Updated: 2021/06/29 16:25:47 by azamario         ###   ########.fr       */
+/*   Updated: 2021/11/10 01:09:10 by azamario         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-This function joins two strings together.
-The ft_strjoin() alocates (with malloc(3)) and returns a new string, which
-is the result of the concatenation of ’s1’ and ’s2’.
-
-const char	*s1		- prefix string.
-const char	*s2		- suffix string.
-
-returns 			- The ft_strjoin() function returns the new string, or null if the allocation fails.
-*/
-
 
 #include "libft.h"
 
