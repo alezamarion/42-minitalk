@@ -1,23 +1,23 @@
 
-NAME =
-CLIENT = client
-SERVER = server
+NAME		=
+CLIENT		= client
+SERVER		= server
 
-SRC_FILES = server.c client.c
-SRC_DIR = src
+SRC_FILES 	= server.c client.c
+SRC_DIR 	= src
 
-LIBFT_DIR = libft
-LIBFT = $(LIBFT_DIR)/libft.a
+LIBFT_DIR 	= libft
+LIBFT 		= $(LIBFT_DIR)/libft.a
 
-INCLUDES = includes
-INCLUDES := $(addprefix -I, $(INCLUDES))
+INCLUDES 	= includes
+INCLUDES 	:= $(addprefix -I, $(INCLUDES))
 
-CC = clang
-CFLAGS = -Wall -Wextra -Werror
+CC 			= clang
+CFLAGS 		= -Wall -Wextra -Werror
 POSIX_FLAGS = -D_POSIX_C_SOURCE=199309L
-RM = rm -f
+RM 			= rm -f
 
-LIBFLAGS = -L$(LIBFT_DIR) -lft
+LIBFLAGS 	= -L$(LIBFT_DIR) -lft
 
 all: $(LIBFT) $(CLIENT) $(SERVER)
 
