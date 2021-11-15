@@ -1,14 +1,14 @@
-# Cloning
+## Cloning
 
-git clone
-cd Minitalk
-make all
+git clone https://github.com/alezamarion/42-minitalk.git <br>
+cd Minitalk <br>
+make <br>
 
-# Compiling
+## Compiling
 
-First you launch server:
-$ ./server
-Server will print its PID and wait
+First you launch server: <br>
+$ ./server <br>
+Server will print its PID and wait <br>
 
-So you use the client to send string or unicode characters to the server
-$ ./client <PID_SERVER> <STRING>
+So you use the client to send string or unicode characters to the server <br>
+$ ./client <PID_SERVER> <STRING> <br>
