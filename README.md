@@ -1,6 +1,6 @@
 ## Cloning
 
-git clone https://github&#46com/alezamarion/42-minitalk.git <br>
+git clone https:<span></span>//github.com/alezamarion/42-minitalk.git <br>
 cd 42-minitalk <br>
 make <br>
 
