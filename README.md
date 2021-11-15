@@ -1,6 +1,6 @@
 ## Cloning
 
-git clone
+git clone <br>
 cd 42-minitalk <br>
 make <br>
 
