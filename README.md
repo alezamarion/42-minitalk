@@ -1,7 +1,7 @@
 ## Cloning
 
-git clone https://github.com/alezamarion/42-minitalk.git <br>
-cd Minitalk <br>
+git clone --recursive git@github.com:alezamarion/42-minitalk.git <br>
+cd 42-minitalk <br>
 make <br>
 
 ## Compiling
