@@ -24,7 +24,7 @@ Mandatory Part <br>
 ◦ The server PID. <br>
 ◦ The string that should be sent. <br>
 • The client must communicate the string passed as a parameter to the server. <br>
-  *Tabspace* Once the string has been received, the server must display it. <br>
+ Once the string has been received, the server must display it. <br>
 • Communication between your programs should ONLY be done using UNIX signals. <br>
 • The server must be able to display the string pretty quickly. By quickly we mean that if you think it is too long, then it is probably too long (hint: 1 second for 100 characters is COLOSSAL) <br>
 • Your server should be able to receive strings from several clients in a row, without needing to be restarted. <br>
