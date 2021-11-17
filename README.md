@@ -17,7 +17,7 @@ $ ./client `PID_SERVER` `STRING` <br><br>
 
 The purpose of this project is to code a small data exchange program using UNIX signals. <br>
 
-Mandatory Part <br>
+**Mandatory Part** <br>
 • You must create a communication program in the form of a client and server. <br> 
 • The server must be launched first, and after being launched it must display its PID. <br>
 • The client will take as parameters: <br>
