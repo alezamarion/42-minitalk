@@ -31,6 +31,6 @@ The purpose of this project is to code a small data exchange program using UNIX 
 • Your server should be able to receive strings from several clients in a row, without needing to be restarted. <br>
 • You can only use the two signals SIGUSR1 and SIGUSR2. <br><br>
 
-**Bonus**
+**Bonus** <br>
 • The server confirms every signal received by sending a signal to the client. <br>
 • Support Unicode characters! <br>
