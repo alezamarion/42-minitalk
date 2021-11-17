@@ -2,7 +2,7 @@
 
 git clone https:<span></span>//github.com/alezamarion/42-minitalk.git <br>
 cd 42-minitalk <br>
-make <br>
+make <br><br>
 
 ## Compiling
 
@@ -11,7 +11,7 @@ $ ./server <br>
 Server will print its PID and wait <br>
 
 So you use the client to send string or unicode characters to the server <br>
-$ ./client `PID_SERVER` `STRING` <br>
+$ ./client `PID_SERVER` `STRING` <br><br>
 
 ## Subject
 
@@ -23,7 +23,8 @@ Mandatory Part <br>
 • The client will take as parameters: <br>
 ◦ The server PID. <br>
 ◦ The string that should be sent. <br>
-• The client must communicate the string passed as a parameter to the server. Once the string has been received, the server must display it. <br>
+• The client must communicate the string passed as a parameter to the server. <br>
+  Once the string has been received, the server must display it. <br>
 • Communication between your programs should ONLY be done using UNIX signals. <br>
 • The server must be able to display the string pretty quickly. By quickly we mean that if you think it is too long, then it is probably too long (hint: 1 second for 100 characters is COLOSSAL) <br>
 • Your server should be able to receive strings from several clients in a row, without needing to be restarted. <br>
