@@ -15,7 +15,7 @@ $ ./server
 Server will print its PID and wait
 
 So you use the client to send string or unicode characters to the server
-$ ./client `PID_SERVER` `STRING`
+$ ./client PID_SERVER STRING
 ```
 
 ## Subject
