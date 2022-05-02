@@ -10,12 +10,12 @@ make
 
 🚧 Compiling:<br/>
 ```
-First you launch server: <br>
-$ ./server <br>
-Server will print its PID and wait <br>
+First you launch server:
+$ ./server
+Server will print its PID and wait
 
-So you use the client to send string or unicode characters to the server <br>
-$ ./client `PID_SERVER` `STRING` <br><br>
+So you use the client to send string or unicode characters to the server
+$ ./client `PID_SERVER` `STRING`
 ```
 
 ## Subject
