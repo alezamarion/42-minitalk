@@ -1,17 +1,22 @@
-## Cloning
 
+## Use:
+
+🚧 Cloning:<br/>
+```
 git clone https:<span></span>//github.com/alezamarion/42-minitalk.git <br>
 cd 42-minitalk <br>
 make <br><br>
+```
 
-## Compiling
-
+🚧 Compiling:<br/>
+```
 First you launch server: <br>
 $ ./server <br>
 Server will print its PID and wait <br>
 
 So you use the client to send string or unicode characters to the server <br>
 $ ./client `PID_SERVER` `STRING` <br><br>
+```
 
 ## Subject
 
@@ -30,6 +35,7 @@ The purpose of this project is to code a small data exchange program using UNIX 
   &ensp; then it is probably too long (hint: 1 second   for 100 characters is COLOSSAL) <br>
 • Your server should be able to receive strings from several clients in a row, without needing to be restarted. <br>
 • You can only use the two signals SIGUSR1 and SIGUSR2. <br><br>
+
 **Bonus** <br>
 • The server confirms every signal received by sending a signal to the client. <br>
 • Support Unicode characters! <br>
