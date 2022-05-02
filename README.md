@@ -3,8 +3,7 @@
 
 🚧 Cloning:<br/>
 ```
-git clone https://github.com/alezamarion/42-minitalk.git
-cd 42-minitalk
+git clone https://github.com/alezamarion/42-minitalk.git && cd 42-minitalk
 make
 ```
 
